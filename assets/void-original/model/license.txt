@@ -1,0 +1,8 @@
+Model Information:
+* title:	Lowpoly Human Skeleton (Rigged)
+* source:	https://sketchfab.com/3d-models/lowpoly-human-skeleton-rigged-1ee3b5f2758445d0b7101b0343c1e95a
+* author:	step (https://sketchfab.com/step)
+
+Model License:
+* license type:	Standard (https://sketchfab.com/licenses)
+* requirements:	see https://sketchfab.com/licenses

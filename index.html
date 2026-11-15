@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Skeleton Puppet</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+  <main id="app">
+    <div id="stage"></div>
+    <div class="halloween-edge halloween-web" aria-hidden="true"></div>
+    <div class="halloween-edge halloween-web halloween-web-right" aria-hidden="true"></div>
+    <img class="halloween-edge halloween-pumpkins" src="./public/images/decorations/jack-o-lanterns-reference.png" alt="" aria-hidden="true">
+    <img class="halloween-edge halloween-candles" src="./public/images/decorations/candles-tombstone-reference.png" alt="" aria-hidden="true">
+    <img class="halloween-edge halloween-ghost halloween-ghost-left" src="./public/images/decorations/ghost-left-reference.png" alt="" aria-hidden="true">
+    <img class="halloween-edge halloween-ghost halloween-ghost-right" src="./public/images/decorations/ghost-right-reference.png" alt="" aria-hidden="true">
+    <span class="halloween-edge halloween-star halloween-star-left" aria-hidden="true">✦</span>
+    <span class="halloween-edge halloween-star halloween-star-right" aria-hidden="true">✦</span>
+    <svg id="rig" aria-label="Skeletal hand and five puppet strings"></svg>
+    <header><span class="mark">SKELETON<br>PUPPET</span><span class="phase" id="phase">LEVEL 01 · DISCOVER</span></header>
+    <aside id="camera" aria-label="Live camera preview">
+      <video id="preview" autoplay muted playsinline></video>
+      <canvas id="landmarks" aria-hidden="true"></canvas>
+      <span id="finger-readout" aria-live="off"></span>
+      <span id="camera-status">START CAMERA</span>
+    </aside>
+    <div class="scene-label" id="scene-label">Move your fingers. See what happens.</div>
+    <button class="quiet-action" id="continue" type="button">CONTINUE</button>
+    <button class="quiet-action" id="help" type="button" hidden>Need help?</button>
+    <div class="ready-panel" id="ready-panel" hidden>
+      <p>Do you know how to control your skeleton?</p>
+      <div class="ready-actions"><button id="start-level-2" type="button">YES, LET'S GO!</button><button id="keep-exploring" type="button">KEEP EXPLORING</button></div>
+    </div>
+    <div class="fact-card" id="fact-card" hidden>
+      <img id="fact-image" class="fact-image" alt="" width="120" height="160">
+      <div class="fact-content"><strong id="fact-title"></strong><div id="fact-text"></div><button id="fact-next" type="button">NEXT</button></div>
+    </div>
+    <div class="complete-panel" id="complete-panel" hidden><strong>YOU KNOW YOUR BONES!</strong><span>Great job exploring your skeleton.</span><button id="start-check" type="button">START SKELETON CHECK</button></div>
+    <section class="quiz-card" id="quiz-card" aria-label="Skeleton Check" hidden>
+      <div class="quiz-top"><strong>SKELETON CHECK</strong><span id="quiz-progress">01 / 04</span></div>
+      <h1 id="quiz-question"></h1>
+      <div class="quiz-options" id="quiz-options">
+        <button type="button" data-answer="A"><b>A</b><span></span></button>
+        <button type="button" data-answer="B"><b>B</b><span></span></button>
+        <button type="button" data-answer="C"><b>C</b><span></span></button>
+      </div>
+      <div class="quiz-feedback" id="quiz-feedback" hidden><strong id="quiz-result"></strong><p id="quiz-explanation"></p></div>
+      <button class="quiz-next" id="quiz-next" type="button" hidden>NEXT</button>
+    </section>
+    <div class="complete-panel" id="quiz-complete" hidden><strong>SKELETON CHECK COMPLETE!</strong><span>You know more about your bones now!</span><button id="start-bone-challenge" type="button">START BONE CHALLENGE</button><button id="quiz-again" type="button">PLAY AGAIN</button></div>
+    <section class="bone-challenge" id="bone-challenge" aria-label="Bone Challenge" hidden>
+      <div class="bone-challenge-top"><span id="challenge-progress">01 / 04</span></div>
+      <h1 id="challenge-name">HUMERUS</h1>
+      <p id="challenge-prompt">Find &amp; move this bone.</p>
+      <p class="bone-challenge-feedback" id="challenge-feedback" role="status" hidden></p>
+      <button class="quiz-next" id="challenge-next" type="button" hidden>NEXT</button>
+    </section>
+    <div class="complete-panel" id="challenge-complete" hidden><strong>YOU'RE A BONE MASTER!</strong><span>You know where your bones are!</span><button id="challenge-again" type="button">PLAY AGAIN</button><button id="challenge-over" type="button">START OVER</button></div>
+    <div id="loading">Loading skeleton…</div>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
