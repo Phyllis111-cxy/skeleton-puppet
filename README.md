@@ -1,5 +1,8 @@
 # Skeleton Puppet · 本地骨骼木偶游戏
 
+> **模型授权待核实：请勿直接公开或再分发本仓库中的人体骨骼模型文件。**
+> 下载页面 [Void 的 Lowpoly Human Skeleton (Rigged)](https://sketchfab.com/3d-models/lowpoly-human-skeleton-rigged-08ab10e2a78549ab86e1b6129678b3aa) 标示 CC BY，但下载包内 `assets/void-original/model/license.txt` 指向另一位作者 [step](https://sketchfab.com/step) 的模型页面，并标示 Sketchfab Standard。两项来源声明冲突，尚未取得可公开分发模型源文件的确认。详见 [ASSET-LICENSE-REVIEW.md](ASSET-LICENSE-REVIEW.md)。公开源码前须移除该模型及其纹理，或取得权利人的明确许可；署名和本提示本身不能替代授权。
+
 从本项目目录运行 `python3 -m http.server 8768`，打开 `http://localhost:8768/`。目前 8767 端口由旧备份目录占用，不代表这个项目。独立关节测试为 `joint-test.html`。
 
 ## 当前进度
