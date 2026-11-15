@@ -1,7 +1,6 @@
 # Skeleton Puppet · 本地骨骼木偶游戏
 
-> **模型授权待核实：请勿直接公开或再分发本仓库中的人体骨骼模型文件。**
-> 下载页面 [Void 的 Lowpoly Human Skeleton (Rigged)](https://sketchfab.com/3d-models/lowpoly-human-skeleton-rigged-08ab10e2a78549ab86e1b6129678b3aa) 标示 CC BY，但下载包内 `assets/void-original/model/license.txt` 指向另一位作者 [step](https://sketchfab.com/step) 的模型页面，并标示 Sketchfab Standard。两项来源声明冲突，尚未取得可公开分发模型源文件的确认。详见 [ASSET-LICENSE-REVIEW.md](ASSET-LICENSE-REVIEW.md)。公开源码前须移除该模型及其纹理，或取得权利人的明确许可；署名和本提示本身不能替代授权。
+> **人体骨骼模型授权说明。** 用户已确认取得公开发布此项目所需的模型授权；授权文件未包含在本仓库中。下载页面 [Void 的 Lowpoly Human Skeleton (Rigged)](https://sketchfab.com/3d-models/lowpoly-human-skeleton-rigged-08ab10e2a78549ab86e1b6129678b3aa) 标示 CC BY，但下载包内 `assets/void-original/model/license.txt` 指向另一位作者 [step](https://sketchfab.com/step) 的模型页面，并标示 Sketchfab Standard。这项来源信息冲突仍保留记录，详见 [ASSET-LICENSE-REVIEW.md](ASSET-LICENSE-REVIEW.md)。不要仅凭本仓库推断模型可供第三方单独再分发。
 
 从本项目目录运行 `python3 -m http.server 8768`，打开 `http://localhost:8768/`。目前 8767 端口由旧备份目录占用，不代表这个项目。独立关节测试为 `joint-test.html`。
 
@@ -30,4 +29,4 @@
 
 腿部牵引现朝镜头方向抬起，实际幅度与自然度仍需真人手势继续调参。侧面手势、左右手兼容与遮挡下的稳定性尚无真人完整测试。原模型未逐件命名桡骨与尺骨；本轮为左前臂补了镜像骨面映射，但两根骨面的准确个体名称仍未验证。Bone Challenge 的 HUMERUS 与 RADIUS & ULNA 都使用抬臂动作，因此动作本身无法区分玩家是否认识这两种骨骼，完成后只高亮相应骨面。
 
-模型授权存在冲突，详见 [ASSET-LICENSE-REVIEW.md](ASSET-LICENSE-REVIEW.md)。目前仅作本地原型，请在公开发布前核实授权。BONE MIRROR 与旧项目未改动。
+模型下载包的来源信息存在冲突；用户已确认取得本项目公开发布授权，详见 [ASSET-LICENSE-REVIEW.md](ASSET-LICENSE-REVIEW.md)。BONE MIRROR 与旧项目未改动。
